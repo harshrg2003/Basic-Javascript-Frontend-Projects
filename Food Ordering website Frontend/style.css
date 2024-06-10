@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#navbar{
+    position:relative;
+    display:flex;
+    align-items: center;
+    top:0px;
+    
+}
+#logo img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    top:15px;
+    left:15px;
+    margin:3px 30px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    background-color: black;
+    content: "";
+    position:absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:4px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: antiquewhite;
+}
+
+#home{
+    display:flex;
+    flex-direction: column;
+    height:478px;
+    padding:3px 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    background:url("mainwebsitephoto-1.jpg") no-repeat center center/cover;
+    content: "";
+    position:absolute;
+    top:0%;
+    left:0%;
+    height:75%;
+    width:100%;
+    z-index: -1;
+    opacity:0.69;
+}
+#home h1{
+    color:rgb(233, 127, 13);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:red;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:3px 6px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+
+}
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+#contact{
+    position:relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.7;
+    background: url("imgsub-1.jpg") no-repeat center center/cover;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height:344px;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    height:50%;
+    width:100%;
+    background: url("indianfood.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity:0.4;
+}
+#clients img{
+    height:144px;
+}
+.client-item{
+    padding:34px;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer{
+    background-color: black;
+    color:white;
+    padding:9px 20px;
+}
+
+
+.primaryh{
+    font-size: 3.8rem;
+    padding:12px;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    padding:6px 20px;
+    background-color: blue;
+    color:antiquewhite;
+    border:2px solid white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    cursor:pointer;
+}
